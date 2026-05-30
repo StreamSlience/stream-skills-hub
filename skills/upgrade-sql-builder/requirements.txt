@@ -1,0 +1,9 @@
+# upgrade-sql-builder 依赖清单
+#
+# 用法：
+#   pip install -r requirements.txt
+#
+# 说明：
+#   - sqlglot: SQL 解析库，用于正确解析和拆分 SQL 语句
+
+sqlglot>=20.0.0

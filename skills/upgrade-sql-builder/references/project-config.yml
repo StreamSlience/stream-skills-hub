@@ -1,0 +1,28 @@
+# 项目默认配置
+# 可按项目修改以下配置项，修改后无需用户每次手动指定
+
+# SQL 文件根目录
+# 用户未指定时自动使用此目录
+default_sql_dir: "./sql"
+
+# 升级脚本输出目录
+# 用户未指定时自动使用此目录
+default_out_dir: "./upgrade"
+
+# 交互确认开关
+# 控制各步骤是否需要用户确认，true = 需要确认，false = 静默跳过使用默认值
+confirm_steps:
+  # Step 1.2: 正则匹配文件后展示结果等待确认
+  regex_match_confirm: true
+
+  # Step 1.3: 变动范围缺失时询问用户
+  range_missing_ask: true
+
+  # Step 2: 收集 Git 上下文后展示确认卡片
+  git_context_confirm: false
+
+  # Step 4: 生成内容预览确认
+  preview_confirm: false
+
+  # Step 5: 写入文件前确认（依赖 Step 4）
+  write_confirm: false
