@@ -1,0 +1,5 @@
+# command-assistant 配置
+root_dir: ~/.command-assistant
+auto_detect: true
+hook_enabled: false
+staging_prompt: true
