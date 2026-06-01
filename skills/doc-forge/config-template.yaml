@@ -1,0 +1,39 @@
+# doc-forge 配置文件
+# 复制此文件到 ~/.doc-forge/config.yaml 进行自定义
+
+defaults:
+  confirm: true
+  force: false
+  style: concise
+  output_base: ~/.doc-forge
+
+# 交互步骤开关（默认全部开启）
+# 设为 false 则该步骤使用默认值，不提示用户
+interactive:
+  confirm_soul: true
+  choose_style: true
+  choose_template: true
+  confirm_output: true
+
+# 灵魂注册表（可扩展，新增灵魂在此添加即可）
+souls:
+  mechanism:
+    prefix: ""
+    template: mechanism.md
+    style: concise
+    description: "底层机制解析"
+  design:
+    prefix: "design-"
+    template: design.md
+    style: concise
+    description: "架构设计方案"
+  troubleshoot:
+    prefix: "troubleshoot-"
+    template: troubleshoot.md
+    style: tutorial
+    description: "问题排查手册"
+  comparison:
+    prefix: "comparison-"
+    template: comparison.md
+    style: reference
+    description: "方案对比评估"
