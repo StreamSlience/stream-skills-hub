@@ -1,9 +1,6 @@
 ---
 name: command-assistant
-description: Use when user mentions command names (awk, psql, free, clickhouse-client
-  etc), business table names (like 行为风险表, t_risk_behavior), service paths, or asks
-  to save/update command snippets. Also triggers when user executes commands with
-  business context that should be recorded, or asks to confirm staging area updates.
+description: 当用户提到指令名（awk、psql、free、clickhouse-client 等）、业务表名（如行为风险表、t_risk_behavior）、服务路径，或要求保存/更新指令片段时触发。也在用户执行含业务上下文的指令（需记录）或要求确认暂存区更新时触发。
 ---
 
 # command-assistant
